@@ -105,21 +105,21 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp GRAVE                          &lt_to_layer_0 6 GRAVE  &kp H        &kp J  &kp K      &kp L    &kp SEMI
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp INT_HENKAN                     &kp INT_MUHENKAN        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LEFT_SHIFT  &lt 3 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE           &lt 4 ENTER                             &kp DEL
+&kp Q               &kp W         &kp E         &kp R                        &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G        &none                              &lt_to_layer_0 6 GRAVE  &kp H        &kp J  &kp K      &kp L    &kp SEMI
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B        &kp GRAVE                          &kp INTERNATIONAL_4     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LEFT_SHIFT  &lt 3 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE           &lt 4 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        FUNCTION {
+        Symbol {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp TAB           &kp F1  &kp F2   &kp F3   &kp F4                        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp LEFT_CONTROL  &kp F5  &kp F6   &kp F7   &kp F8   &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans            &kp F9  &kp F10  &kp F11  &kp F12  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans            &trans  &trans   &trans   &trans   &trans      &trans   &trans                          &kp F12
             >;
         };
 
