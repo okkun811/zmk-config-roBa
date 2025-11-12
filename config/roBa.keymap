@@ -47,27 +47,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        shift_tab {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
     };
 
@@ -118,10 +103,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E         &kp R                        &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G        &mkp MB3                           &lt_to_layer_0 6 GRAVE  &kp H        &kp J  &kp K      &kp L    &jis_SEMI
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B        &kp GRAVE                          &kp INTERNATIONAL_4     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LEFT_SHIFT  &lt 2 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE           &lt 3 ENTER                             &kp DEL
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                        &kp G        &mkp MB3                           &lt_to_layer_0 6 GRAVE  &kp H        &kp J  &kp K      &kp L    &jis_SEMI
+&kp Z      &kp X         &kp C         &kp V                        &kp B        &kp GRAVE                          &kp INTERNATIONAL_4     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LEFT_SHIFT  &lt 2 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE           &lt 3 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
